@@ -1,0 +1,12 @@
+# 递归获取所有 .c 和 .cpp
+file(GLOB_RECURSE SRCS "port_i2c.cpp" "*.c" "*.cpp")
+
+idf_component_register(
+    SRCS ${SRCS}
+    INCLUDE_DIRS "."
+    REQUIRES 
+        driver 
+        esp_lcd 
+        esp_driver_i2c
+        esp_timer
+)

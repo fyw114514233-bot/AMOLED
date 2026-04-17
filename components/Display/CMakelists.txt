@@ -1,0 +1,11 @@
+# 获取当前目录下所有的 .c 文件，确保 spi 和 mipi 的实现也被包含进去
+file(GLOB SRCS "esp_lcd_co5300.c" "esp_lcd_co5300_spi.c" "*.c")
+
+idf_component_register(
+    SRCS ${SRCS}
+    INCLUDE_DIRS "."
+    REQUIRES 
+        esp_lcd              # <--- 必须添加这个，解决 esp_lcd_types.h 找不到的问题
+        driver               # 包含 GPIO, SPI 等基础驱动
+        esp_driver_i2s       # 如果你的代码里确实用到了 I2S
+)
