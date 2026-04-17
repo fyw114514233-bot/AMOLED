@@ -112,11 +112,7 @@ void ui_init(void)
                                                false, LV_FONT_DEFAULT);
     lv_disp_set_theme(dispp, theme);
     ui_The_A_screen_init();
-    ui_The_B_screen_init();
     ui_The_C_screen_init();
-    ui_The_D_screen_init();
-    ui_The_E_screen_init();
-    ui_The_F_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     lv_disp_load_scr(ui_The_A);
 }

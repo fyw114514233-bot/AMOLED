@@ -2671,3 +2671,84 @@
 372	548	7980966705979695	bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
 372	548	7980966705979695	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/CMakeFiles/bootloader-complete	877891dcc27e0e5e
 372	548	7980966705979695	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+202	427	7980990077453701	bootloader-prefix/src/bootloader-stamp/bootloader-build	46684850320be34f
+202	427	7980990077453701	bootloader/bootloader.elf	46684850320be34f
+202	427	7980990077453701	bootloader/bootloader.bin	46684850320be34f
+202	427	7980990077453701	bootloader/bootloader.map	46684850320be34f
+202	427	7980990077453701	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	46684850320be34f
+202	427	7980990077453701	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.elf	46684850320be34f
+202	427	7980990077453701	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.bin	46684850320be34f
+202	427	7980990077453701	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.map	46684850320be34f
+428	497	7980990079723491	bootloader-prefix/src/bootloader-stamp/bootloader-install	1cd3eddbee7bdf03
+428	497	7980990079723491	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	1cd3eddbee7bdf03
+497	693	7980990082270568	CMakeFiles/bootloader-complete	877891dcc27e0e5e
+497	693	7980990082270568	bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+497	693	7980990082270568	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/CMakeFiles/bootloader-complete	877891dcc27e0e5e
+497	693	7980990082270568	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+187	756	7980990077304539	esp-idf/main/CMakeFiles/__idf_main.dir/my_ui/ui.c.obj	9d19bddc9e5a7cd2
+171	1027	7980990077126754	esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj	ed363ef3813de212
+153	1094	7980990076976639	esp-idf/main/CMakeFiles/__idf_main.dir/Configure/Configure.cpp.obj	15e21756e7b8a5cd
+1095	1280	7980990086396275	esp-idf/main/libmain.a	b85290e2a3a3ccaa
+146	332	7980991121510629	bootloader-prefix/src/bootloader-stamp/bootloader-build	46684850320be34f
+146	332	7980991121510629	bootloader/bootloader.elf	46684850320be34f
+146	332	7980991121510629	bootloader/bootloader.bin	46684850320be34f
+146	332	7980991121510629	bootloader/bootloader.map	46684850320be34f
+146	332	7980991121510629	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	46684850320be34f
+146	332	7980991121510629	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.elf	46684850320be34f
+146	332	7980991121510629	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.bin	46684850320be34f
+146	332	7980991121510629	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.map	46684850320be34f
+332	399	7980991123358393	bootloader-prefix/src/bootloader-stamp/bootloader-install	1cd3eddbee7bdf03
+332	399	7980991123358393	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	1cd3eddbee7bdf03
+399	575	7980991125733689	CMakeFiles/bootloader-complete	877891dcc27e0e5e
+399	575	7980991125733689	bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+399	575	7980991125733689	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/CMakeFiles/bootloader-complete	877891dcc27e0e5e
+399	575	7980991125733689	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+129	930	7980991121306278	esp-idf/main/CMakeFiles/__idf_main.dir/Configure/Configure.cpp.obj	15e21756e7b8a5cd
+931	1104	7980991129307398	esp-idf/main/libmain.a	b85290e2a3a3ccaa
+1104	14549	7980991265144323	esp-idf/esp_system/ld/sections.ld	d86ffbb705bf3e45
+1104	14549	7980991265144323	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/esp-idf/esp_system/ld/sections.ld	d86ffbb705bf3e45
+14550	16672	7980991265528292	ESP32S3N16R8_with_LVGLv8.3.11_20250211.elf	a948c96c2a7fc5f4
+16672	17018	7980991290166274	.bin_timestamp	20e3bccad71a6970
+16672	17018	7980991290166274	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/.bin_timestamp	20e3bccad71a6970
+17018	17103	7980991290222279	esp-idf/esptool_py/CMakeFiles/app_check_size	35bdb810fd7a46ec
+17018	17103	7980991290222279	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/esp-idf/esptool_py/CMakeFiles/app_check_size	35bdb810fd7a46ec
+131	218	7980992073529898	esp-idf/esptool_py/CMakeFiles/app_check_size	35bdb810fd7a46ec
+131	218	7980992073529898	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/esp-idf/esptool_py/CMakeFiles/app_check_size	35bdb810fd7a46ec
+122	300	7980992073447079	bootloader-prefix/src/bootloader-stamp/bootloader-build	46684850320be34f
+122	300	7980992073447079	bootloader/bootloader.elf	46684850320be34f
+122	300	7980992073447079	bootloader/bootloader.bin	46684850320be34f
+122	300	7980992073447079	bootloader/bootloader.map	46684850320be34f
+122	300	7980992073447079	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	46684850320be34f
+122	300	7980992073447079	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.elf	46684850320be34f
+122	300	7980992073447079	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.bin	46684850320be34f
+122	300	7980992073447079	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.map	46684850320be34f
+301	367	7980992075200307	bootloader-prefix/src/bootloader-stamp/bootloader-install	1cd3eddbee7bdf03
+301	367	7980992075200307	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	1cd3eddbee7bdf03
+367	547	7980992077636531	CMakeFiles/bootloader-complete	877891dcc27e0e5e
+367	547	7980992077636531	bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+367	547	7980992077636531	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/CMakeFiles/bootloader-complete	877891dcc27e0e5e
+367	547	7980992077636531	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+174	366	7980993709751597	bootloader-prefix/src/bootloader-stamp/bootloader-build	46684850320be34f
+174	366	7980993709751597	bootloader/bootloader.elf	46684850320be34f
+174	366	7980993709751597	bootloader/bootloader.bin	46684850320be34f
+174	366	7980993709751597	bootloader/bootloader.map	46684850320be34f
+174	366	7980993709751597	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	46684850320be34f
+174	366	7980993709751597	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.elf	46684850320be34f
+174	366	7980993709751597	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.bin	46684850320be34f
+174	366	7980993709751597	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader/bootloader.map	46684850320be34f
+367	436	7980993711670744	bootloader-prefix/src/bootloader-stamp/bootloader-install	1cd3eddbee7bdf03
+367	436	7980993711670744	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install	1cd3eddbee7bdf03
+436	619	7980993714185018	CMakeFiles/bootloader-complete	877891dcc27e0e5e
+436	619	7980993714185018	bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+436	619	7980993714185018	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/CMakeFiles/bootloader-complete	877891dcc27e0e5e
+436	619	7980993714185018	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/bootloader-prefix/src/bootloader-stamp/bootloader-done	877891dcc27e0e5e
+158	923	7980993709621548	esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj	ed363ef3813de212
+141	988	7980993709417243	esp-idf/main/CMakeFiles/__idf_main.dir/Configure/Configure.cpp.obj	15e21756e7b8a5cd
+989	1170	7980993717927429	esp-idf/main/libmain.a	b85290e2a3a3ccaa
+1170	14644	7980993854063918	esp-idf/esp_system/ld/sections.ld	d86ffbb705bf3e45
+1170	14644	7980993854063918	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/esp-idf/esp_system/ld/sections.ld	d86ffbb705bf3e45
+14644	16706	7980993854489222	ESP32S3N16R8_with_LVGLv8.3.11_20250211.elf	a948c96c2a7fc5f4
+16707	17058	7980993878569743	.bin_timestamp	20e3bccad71a6970
+16707	17058	7980993878569743	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/.bin_timestamp	20e3bccad71a6970
+17059	17144	7980993878632230	esp-idf/esptool_py/CMakeFiles/app_check_size	35bdb810fd7a46ec
+17059	17144	7980993878632230	C:/Users/26320/Desktop/Dancing We-V1 - V2/build/esp-idf/esptool_py/CMakeFiles/app_check_size	35bdb810fd7a46ec

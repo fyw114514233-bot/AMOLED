@@ -84,6 +84,10 @@ extern const char *TAG;
 #define EXAMPLE_LVGL_TASK_MAX_SLEEP_MS 12
 #define EXAMPLE_LVGL_TASK_STACK_SIZE (16 * 1024)
 #define EXAMPLE_LVGL_TASK_PRIORITY 8
+#define EXAMPLE_TOUCH_TASK_STACK_SIZE (4 * 1024)
+#define EXAMPLE_TOUCH_TASK_PRIORITY 4
+#define EXAMPLE_TOUCH_TASK_PERIOD_MS 10
+#define EXAMPLE_TOUCH_RELEASE_GRACE_MS 30
 
 /* ==================== 全局变量声明 ==================== */
 extern SemaphoreHandle_t lvgl_mux;
@@ -158,6 +162,7 @@ esp_err_t lvgl_mutex_create(void);
 #if EXAMPLE_USE_TOUCH
 esp_err_t lvgl_touch_input_init(lv_disp_t *disp);
 void setup_sensor(void);
+void touch_scanner_task(void *arg);
 #endif
 
 /**

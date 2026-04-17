@@ -1,5 +1,6 @@
 #include "Configure.h"
 #include "esp_heap_caps.h"
+#include "freertos/portmacro.h"
 
 /* ==================== 日志标签定义 ==================== */
 const char *TAG = "LCD_FPS_DEBUG";
@@ -12,7 +13,7 @@ TouchDrvCST92xx touch;
 int16_t tp_x = 0;
 int16_t tp_y = 0;
 bool tp_pressed = false;
-static uint32_t tp_last_scan_ms = 0;
+static portMUX_TYPE tp_lock = portMUX_INITIALIZER_UNLOCKED;
 #endif
 
 uint32_t frame_count = 0;
@@ -241,6 +242,14 @@ esp_err_t lvgl_touch_input_init(lv_disp_t *disp)
     
     // 创建触摸扫描任务
     
+    BaseType_t touch_task_created = xTaskCreatePinnedToCore(touch_scanner_task, "TouchTask",
+                                                            EXAMPLE_TOUCH_TASK_STACK_SIZE, NULL,
+                                                            EXAMPLE_TOUCH_TASK_PRIORITY, NULL, 1);
+    if (touch_task_created != pdPASS) {
+        ESP_LOGE(TAG, "Failed to create touch scanner task");
+        return ESP_FAIL;
+    }
+
     ESP_LOGI(TAG, "LVGL touch input driver initialized successfully");
     return ESP_OK;
 }
@@ -363,27 +372,50 @@ void example_lvgl_port_task(void *arg)
 }
 
 #if EXAMPLE_USE_TOUCH
+void touch_scanner_task(void *arg)
+{
+    LV_UNUSED(arg);
+
+    int16_t x[1];
+    int16_t y[1];
+    int16_t last_x = 0;
+    int16_t last_y = 0;
+
+    while (1) {
+        bool pressed = false;
+
+        if (touch.getPoint(x, y, 1)) {
+            last_x = x[0];
+            last_y = y[0];
+            pressed = true;
+        }
+
+        portENTER_CRITICAL(&tp_lock);
+        tp_x = last_x;
+        tp_y = last_y;
+        tp_pressed = pressed;
+        portEXIT_CRITICAL(&tp_lock);
+
+        vTaskDelay(pdMS_TO_TICKS(EXAMPLE_TOUCH_TASK_PERIOD_MS));
+    }
+}
+
 void example_lvgl_touch_cb(lv_indev_drv_t *drv, lv_indev_data_t *data)
 {
     LV_UNUSED(drv);
 
-    uint32_t now_ms = lv_tick_get();
-    if ((uint32_t)(now_ms - tp_last_scan_ms) >= 15U) {
-        int16_t x[1];
-        int16_t y[1];
+    int16_t x;
+    int16_t y;
+    bool pressed;
 
-        tp_last_scan_ms = now_ms;
-        if (touch.getPoint(x, y, 1)) {
-            tp_x = x[0];
-            tp_y = y[0];
-            tp_pressed = true;
-        } else {
-            tp_pressed = false;
-        }
-    }
+    portENTER_CRITICAL(&tp_lock);
+    x = tp_x;
+    y = tp_y;
+    pressed = tp_pressed;
+    portEXIT_CRITICAL(&tp_lock);
 
-    data->point.x = tp_x;
-    data->point.y = tp_y;
-    data->state = tp_pressed ? LV_INDEV_STATE_PRESSED : LV_INDEV_STATE_RELEASED;
+    data->point.x = x;
+    data->point.y = y;
+    data->state = pressed ? LV_INDEV_STATE_PRESSED : LV_INDEV_STATE_RELEASED;
 }
 #endif
